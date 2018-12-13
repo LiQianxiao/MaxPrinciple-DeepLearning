@@ -1,0 +1,47 @@
+toy:
+  seed: 1
+  verbosity: WARN
+  print_step: false
+  num_train: 100
+  num_test: 100
+  num_nodes: 5
+  num_layers: 20
+  rho: 1.0
+  reg: 0.001
+  activation: tanh
+  kernel_init: 0.0
+  bias_init: 0.0
+  delta: 0.25
+  batch_size: 100
+  buffer_size: 100
+  num_epochs: 500
+  sgd_lr: 0.1
+  adagrad_lr: 0.1
+  adam_lr: 0.005
+  msa_maxiter: 10
+  msa_perturb_init: 0.005
+
+mnist:
+  dataset_name: mnist  # also can take fashion_mnist
+  seed: 1
+  verbosity: WARN
+  print_step: 100  # false or null to turn off
+  lift_dimension: 1
+  num_train: 60000
+  num_test: 10000
+  num_channels: 5
+  filter_size: 3
+  padding: same
+  num_layers: 2
+  rho: 0.03
+  reg: 0.001
+  activation: tanh
+  delta: 0.5
+  batch_size: 128
+  buffer_size: 512
+  num_epochs: 1
+  sgd_lr: 0.01
+  adagrad_lr: 0.01
+  adam_lr: 0.001
+  msa_maxiter: 10
+  msa_perturb_init: 0.0
