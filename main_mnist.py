@@ -9,11 +9,11 @@ License: MIT License
 """
 
 import tensorflow as tf
-import layers
-import network
-import train
+from msalib import layers
+from msalib import network
+from msalib import train
+from msalib.utils import load_dataset
 import yaml
-from utils import load_dataset
 
 
 def loss_func(output, label):
